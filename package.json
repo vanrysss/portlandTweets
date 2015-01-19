@@ -1,0 +1,13 @@
+{
+  "name": "PortlandSocialMedia",
+  "version": "0.0.1",
+  "description": "twitter streaming",
+  "dependencies": {
+    "express": "^4.10.7",
+    "instagram-node": "^0.5.5",
+    "instagram-node-lib": "^0.1.1",
+    "socket.io": "^1.2.1",
+    "twit": "^1.1.19",
+    "underscore": "^1.7.0"
+  }
+}

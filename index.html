@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <title>Portland GeoLocated Tweets</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href='https://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Offside' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <script>
+      //for localhost testing
+      var socket = io.connect('http://localhost:8000');
+      // for heroku
+      //var socket = io.connect('herokuapp.com/');
+      socket.on('stream', function(tweet,urlTweet) {
+        $("#tweetd").fadeOut(2000, function() {
+          $("#tweetd").empty();
+          $('<a href="' + urlTweet+'">'+tweet +'</a>').prependTo($("#tweetd"))
+          $("#tweetd").fadeIn(2000);
+        });
+      });
+    </script>
+  </head>
+  <header>
+    <h1 id="maintitle">PORTLAND TWEETS</h1>
+    <h3 id="subtitle">AS THEY HAPPEN</h3>
+  </header>
+
+  <body>
+    <div id="tweetd"></div>
+  </body>
+
+  </html>
+</DOCTYPE>

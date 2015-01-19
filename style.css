@@ -1,0 +1,52 @@
+header{
+
+  text-align:center;
+  color:#1FDA9A;
+  background-color:#F2F2F3;
+
+}
+#maintitle{
+  font-weight:bold;
+  font-family:'Offside',cursive, sans-serif;
+
+}
+#subtitle{
+  font-size:0.4em;
+}
+
+body {
+  background-color:#F2F2F3;
+  font-family:'Monda', sans-serif;
+  font-size:2em;
+  letter-spacing:-0.04em;
+  margin:0;
+  padding:50px 75px 0 75px;
+}
+
+div {
+  word-wrap:break-word;
+}
+
+p{
+  text-align:center;
+  font-size:2em;
+  margin:20px 0 20px 0;
+}
+
+a{
+  color:#432F21;
+  text-decoration:none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a.hover{
+  color:#E9BC1B;
+}
+
+
+#tweetd{
+  margin-top:2em;
+  text-align:center;
+}
